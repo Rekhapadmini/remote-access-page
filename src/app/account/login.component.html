@@ -1,0 +1,32 @@
+﻿<div class="login-page card">
+    <div class="login-title" style="display: block;">
+        <a title="Northern Trust logo" class="logo-home-page css-l64nd7-StyledHeaderLogo e44tijm0 right-side-logo" href="https://northerntrust.com">
+          <img alt="Norhtern Trust Logo redirects to northerntrust.com" src="https://cdn.northerntrust.com/osk/nt/assets/6/NT_MFA_Mobile_logo.svg" style="width: 150px;">
+        </a>
+    </div>
+    <!-- <h4 class="card-header" style=" padding: 10px;">Login</h4> -->
+    <div class="card-body" >
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label class="form-label" style="display: flex; justify-content: center;">User ID</label>
+                <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                    <div *ngIf="f.username.errors.required">Username is required</div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" style="display: flex; justify-content: center;">Password</label>
+                <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required">Password is required</div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button [disabled]="loading" class="btn" style="color:aliceblue; background-color: darkgreen;">
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm me-1"></span>
+                    Login
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,8 +1,15 @@
 ﻿<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<div class="container p-0 ">
+    <div class="d-flex justify-content-end mt-3 mb-3">
 
-<div class="container">
+        <button class="btn fs-5 fw-regular p-2 ">Logout</button>
+    </div>
+    <div class="d-flex flex-column gap-4">
+        <div class="w-100  d-flex align-items-center justify-content-center" style="background-color: rgb(0, 85, 0); height: 120px;">
+            <h3 class="fs-4 fw-semibold text-white m-0 p-0 d-flex align-items-center justify-content-center gap-2">Welcome <h3 class="d-inline m-0 p-0">USERNAME</h3> | Env: Prod 5.2</h3>
+        </div>
     <!-- First div -->
-    <div class="section">
+    <div class="section w-100 p-0 m-0">
         <h2 style="color: green;">Remote Access Status</h2>
         <div class="flex-container">
             <div class="layout-wrapper first-element">
@@ -18,24 +25,36 @@
     
     
     <!-- Second div with two side-by-side divs -->
-    <div class="section">
+    <div class="section w-100 p-0 m-0">
         <h2 style="color: green;">Your Remote Access Region: North America</h2>
         <div class="side-by-side">
-            <div class="layout-wrapper">
-                <h3 style="text-align: left;">Web Apps</h3>
-                <a href="https://wpcvpn02-webapps.remote.ntrs.com/webmail/#t=1713855954225"><h5 style="text-align: left;">WebMail</h5></a>
-                <a href="https://www.myworkday.com/ntrs/login.htmld"><h5 style="text-align: left;">Workday</h5></a>
-                <a href="https://npcvpn01-webapps.remote.ntrs.com/myplace/#t=1713856027577"><h5 style="text-align: left;">Legacy HR Sytem</h5></a>
+            <div class="layout-wrapper d-flex flex-column align-items-center">
+                <h3 class="btn w-75 p-3 fw-bold fs-4">WebApps</h3>
+                <div class="d-flex justify-content-between gap-3 w-75">
+                    <a class="btn w-50 p-2 d-flex align-items-center justify-content-center" 
+                    href="https://npcvpn01-webapps.remote.ntrs.com/myplace/#t=1713856027577">
+                    <h5 class="m-0 fs-4">Legacy HR Sytem</h5></a>
+                    <a class="btn w-50 p-2 d-flex align-items-center justify-content-center" 
+                    href="https://www.myworkday.com/ntrs/login.htmld">
+                    <h5 class="m-0 fs-4">Workday</h5></a>
+                </div>
             </div>
             
-            <div class="layout-wrapper">
-                <h3 style="text-align: left;">VDI Connect — from Personal Device (BYOD)</h3>
-                <a href="https://npccw.remote.ntrs.com/#t=1713856041726"><h5 style="text-align: left;">Connect to US VDI</h5></a>
-                <a href="https://ukpccw.remote.ntrs.com/#t=1713856054760"><h5 style="text-align: left;">Connect to UK VDI</h5></a>
-                <a href="https://wpccwo.remote.ntrs.com/#t=1713856061677"><h5 style="text-align: left;">Connect to Omnium VDI</h5></a>
+            <div class="layout-wrapper d-flex flex-column align-items-center justify-content-center">
+                <h3 class="btn w-100 p-3 fw-bold fs-4">VDI Connect Device - BYOD</h3>
+                <div class="d-flex justify-content-between gap-3 w-100">
+                    <a  class="btn w-50 p-2 d-flex align-items-center justify-content-center" 
+                    href="https://npccw.remote.ntrs.com/#t=1713856041726"><h5 class="m-0 fs-4">Connect to US VDI</h5></a>
+                    <a  class="btn w-50 p-2 d-flex align-items-center justify-content-center"
+                    href="https://ukpccw.remote.ntrs.com/#t=1713856054760"><h5 class="m-0 fs-4">Connect to UK VDI</h5></a>
+                    <a  class="btn w-50 p-2 d-flex align-items-center justify-content-center" 
+                    href="https://wpccwo.remote.ntrs.com/#t=1713856061677"><h5 class="m-0 fs-4">Connect to Omnium VDI</h5></a>
+                </div>
             </div>
         </div>
         <br>
         <a href="https://cdn.northerntrust.com/remoteaccess/remote-access-faq.pdf"><h5 style="text-align: left;">FAQs</h5></a>
+    </div>
+
     </div>
 </div>

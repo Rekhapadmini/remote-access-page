@@ -4,7 +4,11 @@
 
 export const environment = {
     production: false,
-    apiUrl: 'http://localhost:4000'
+    apiUrl: 'http://localhost:4000',
+    clientId: 'E90c0fe63-bcf2-44d5-8fb7-b8bbc0b29dc6',
+    tenantName: 'ENTER_TENANT_NAME_HERE',
+    redirectUrl: 'http://localhost:4200',
+    postLogoutUrl:"http://localhost:4200"
 };
 
 /*

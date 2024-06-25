@@ -29,7 +29,7 @@ export class AppComponent {
       (filter((interactionStatus:InteractionStatus)=>
       interactionStatus==InteractionStatus.None),
       takeUntil(this._destroy))
-      .subscribe(x=>
+      .subscribe((x: any)=>
         {
           this.isUserLoggedIn=this.authService.instance.getAllAccounts().length>0;
 

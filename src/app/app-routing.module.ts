@@ -8,7 +8,7 @@ import { MsalGuard } from '@azure/msal-angular';
 const accountModule = () => import('./account/account.module').then(x => x.AccountModule);
 
 const routes: Routes = [
-    { path: 'home', component: HomeComponent, canActivate:[MsalGuard] },
+    { path: 'home', component: HomeComponent },
     { path: 'account', loadChildren: accountModule },
 
     // otherwise redirect to home

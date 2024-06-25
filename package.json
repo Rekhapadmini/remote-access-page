@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
+    "start-ssl": "ng serve --ssl true --ssl-key ssl/server.key --ssl-cert ssl/server.crt",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -30,6 +31,7 @@
     "@angular/cli": "~14.2.8",
     "@angular/compiler-cli": "^17.3.5",
     "@types/jasmine": "~4.0.0",
+    "browser-sync": "^3.0.2",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
